@@ -48,12 +48,6 @@ export function AboutSection() {
 								<div className='absolute inset-0 transform skew-x-12 origin-top-right'
 									 style={{clipPath: 'polygon(55% 0, 100% 0, 100% 100%, 30% 100%)'}}>
 									<div className='transform -skew-x-12 h-full relative overflow-hidden'>
-										{/* Diamond-shaped image container */}
-										<div className='absolute inset-8 transform rotate-45 overflow-hidden shadow-2xl'
-											 style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
-											
-											<div className='absolute inset-0 bg-gradient-to-br from-violet-600/20 to-pink-600/20'></div>
-										</div>
 										
 										{/* Floating accent elements */}
 										<div className='absolute top-4 right-4 w-8 h-8 bg-yellow-400 transform rotate-45 animate-bounce'></div>
