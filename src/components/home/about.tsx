@@ -51,11 +51,7 @@ export function AboutSection() {
 										{/* Diamond-shaped image container */}
 										<div className='absolute inset-8 transform rotate-45 overflow-hidden shadow-2xl'
 											 style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
-											<img
-												className='w-full h-full object-cover transform -rotate-45 scale-150 hover:scale-175 transition-transform duration-1000'
-												src='https://images.303magazine.com/uploads/2021/09/210830_Mon_HIIT_9x16-2.jpg'
-												alt='Fitness Altitude - Training at Heights'
-											/>
+											
 											<div className='absolute inset-0 bg-gradient-to-br from-violet-600/20 to-pink-600/20'></div>
 										</div>
 										
