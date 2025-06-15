@@ -35,23 +35,37 @@ export function AboutPage() {
 						</div>
 					</div>
 
-					{/* Diagonal split layout */}
-					<div className='relative h-96 lg:h-[500px] overflow-hidden mb-16'>
-						{/* Left triangle - Text content */}
-						<div className='absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 transform -skew-x-12 origin-top-left border-r-4 border-violet-500'
-							 style={{clipPath: 'polygon(0 0, 70% 0, 45% 100%, 0 100%)'}}>
-							<div className='transform skew-x-12 p-6 lg:p-16 h-full flex flex-col justify-center'>
+					{/* Responsive layout - Mobile stack, Desktop diagonal */}
+					<div className='lg:relative lg:h-[500px] lg:overflow-hidden mb-16'>
+						{/* Mobile stacked layout */}
+						<div className='lg:hidden space-y-8'>
+							{/* Mobile image */}
+							<div className='relative h-64 overflow-hidden rounded-2xl shadow-2xl'>
+								<img
+									className='w-full h-full object-cover hover:scale-110 transition-transform duration-1000'
+									src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop'
+									alt='Fitness Altitude - Elevating Fitness Knowledge'
+								/>
+								<div className='absolute inset-0 bg-gradient-to-br from-violet-600/30 to-pink-600/30'></div>
+								
+								{/* Mobile floating elements */}
+								<div className='absolute top-4 right-4 w-6 h-6 bg-yellow-400 transform rotate-45 animate-bounce'></div>
+								<div className='absolute bottom-4 left-4 w-4 h-4 bg-emerald-500 rounded-full animate-pulse'></div>
+							</div>
+
+							{/* Mobile text content */}
+							<div className='bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-2xl border-l-4 border-violet-500 shadow-lg'>
 								<div className='space-y-6'>
 									<div className='flex items-center space-x-4'>
 										<div className='w-4 h-4 bg-violet-500 transform rotate-45'></div>
 										<span className='text-sm font-bold text-violet-600 uppercase tracking-wider'>Our Story</span>
 									</div>
-									<p className='text-lg lg:text-xl text-gray-700 font-medium leading-relaxed max-w-md'>
+									<p className='text-lg text-gray-700 font-medium leading-relaxed'>
 										Welcome to Fitness Altitude, your ultimate destination for 
 										<span className='text-violet-600 font-bold'> science-backed fitness content</span> 
 										that elevates your training to new heights.
 									</p>
-									<p className='text-gray-600 leading-relaxed max-w-md'>
+									<p className='text-gray-600 leading-relaxed'>
 										Founded with the mission to bridge the gap between scientific research and practical fitness application, 
 										we create content that transforms your understanding of health and performance.
 									</p>
@@ -59,24 +73,49 @@ export function AboutPage() {
 							</div>
 						</div>
 
-						{/* Right triangle - Image with diamond cut */}
-						<div className='absolute inset-0 transform skew-x-12 origin-top-right'
-							 style={{clipPath: 'polygon(55% 0, 100% 0, 100% 100%, 30% 100%)'}}>
-							<div className='transform -skew-x-12 h-full relative overflow-hidden'>
-								{/* Diamond-shaped image container */}
-								<div className='absolute inset-8 transform rotate-45 overflow-hidden shadow-2xl'
-									 style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
-									<img
-										className='w-full h-full object-cover transform -rotate-45 scale-150 hover:scale-175 transition-transform duration-1000'
-										src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop'
-										alt='Fitness Altitude - Elevating Fitness Knowledge'
-									/>
-									<div className='absolute inset-0 bg-gradient-to-br from-violet-600/20 to-pink-600/20'></div>
+						{/* Desktop diagonal layout */}
+						<div className='hidden lg:block relative h-full overflow-hidden'>
+							{/* Left triangle - Text content */}
+							<div className='absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 transform -skew-x-12 origin-top-left border-r-4 border-violet-500'
+								 style={{clipPath: 'polygon(0 0, 70% 0, 45% 100%, 0 100%)'}}>
+								<div className='transform skew-x-12 p-6 lg:p-16 h-full flex flex-col justify-center'>
+									<div className='space-y-6'>
+										<div className='flex items-center space-x-4'>
+											<div className='w-4 h-4 bg-violet-500 transform rotate-45'></div>
+											<span className='text-sm font-bold text-violet-600 uppercase tracking-wider'>Our Story</span>
+										</div>
+										<p className='text-lg lg:text-xl text-gray-700 font-medium leading-relaxed max-w-md'>
+											Welcome to Fitness Altitude, your ultimate destination for 
+											<span className='text-violet-600 font-bold'> science-backed fitness content</span> 
+											that elevates your training to new heights.
+										</p>
+										<p className='text-gray-600 leading-relaxed max-w-md'>
+											Founded with the mission to bridge the gap between scientific research and practical fitness application, 
+											we create content that transforms your understanding of health and performance.
+										</p>
+									</div>
 								</div>
-								
-								{/* Floating accent elements */}
-								<div className='absolute top-4 right-4 w-8 h-8 bg-yellow-400 transform rotate-45 animate-bounce'></div>
-								<div className='absolute bottom-8 left-8 w-6 h-6 bg-emerald-500 rounded-full animate-pulse'></div>
+							</div>
+
+							{/* Right triangle - Image with diamond cut */}
+							<div className='absolute inset-0 transform skew-x-12 origin-top-right'
+								 style={{clipPath: 'polygon(55% 0, 100% 0, 100% 100%, 30% 100%)'}}>
+								<div className='transform -skew-x-12 h-full relative overflow-hidden'>
+									{/* Diamond-shaped image container */}
+									<div className='absolute inset-8 transform rotate-45 overflow-hidden shadow-2xl'
+										 style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
+										<img
+											className='w-full h-full object-cover transform -rotate-45 scale-150 hover:scale-175 transition-transform duration-1000'
+											src='https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop'
+											alt='Fitness Altitude - Elevating Fitness Knowledge'
+										/>
+										<div className='absolute inset-0 bg-gradient-to-br from-violet-600/20 to-pink-600/20'></div>
+									</div>
+									
+									{/* Floating accent elements */}
+									<div className='absolute top-4 right-4 w-8 h-8 bg-yellow-400 transform rotate-45 animate-bounce'></div>
+									<div className='absolute bottom-8 left-8 w-6 h-6 bg-emerald-500 rounded-full animate-pulse'></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -333,18 +372,18 @@ if (typeof document !== 'undefined' && !document.getElementById('about-page-styl
 			animation: spin-slow 20s linear infinite;
 		}
 
-		/* Responsive adjustments for clip-path */
-		@media (max-width: 768px) {
-			[style*="clip-path"] {
-				clip-path: none !important;
-			}
+		/* Ensure proper z-index stacking */
+		.relative {
+			position: relative;
 		}
-
-		/* Ensure proper spacing on mobile */
-		@media (max-width: 640px) {
-			.transform.skew-x-12,
-			.transform.-skew-x-12 {
-				transform: none !important;
+		
+		/* Improve mobile readability */
+		@media (max-width: 1024px) {
+			.lg\\:hidden {
+				display: block !important;
+			}
+			.hidden.lg\\:block {
+				display: none !important;
 			}
 		}
 	`
