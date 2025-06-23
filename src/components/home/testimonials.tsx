@@ -1,27 +1,27 @@
 const TESTIMONIALS = [
 	{
 		quote:
-			'Статьи на FITNESS ALTITUDE кардинально изменили мой подход к тренировкам. Научные методики действительно работают!',
-		author: 'Дмитрий Волков',
-		title: 'Персональный тренер',
+			'Articles on FITNESS ALTITUDE have radically changed my approach to training. Scientific methods really work!',
+		author: 'David Walker',
+		title: 'Personal Trainer',
 		image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
-		stat: '2 года с нами'
+		stat: '2 years with us'
 	},
 	{
 		quote:
-			"Невероятное разнообразие тем и глубина подачи материала. Каждая статья - это шаг к новым высотам в фитнесе.",
-		author: 'Анна Петрова',
-		title: 'Фитнес-инструктор',
+			"Incredible variety of topics and depth of content. Each article is a step towards new heights in fitness.",
+		author: 'Anna Peterson',
+		title: 'Fitness Instructor',
 		image: 'https://image-handler.playbookapp.io/828x0/filters:quality(85)/1695690137546_Cover-comp.jpg',
-		stat: '500+ тренировок'
+		stat: '500+ workouts'
 	},
 	{
 		quote:
-			'FITNESS ALTITUDE помог мне понять науку за тренировками. Теперь каждое упражнение имеет смысл и цель.',
-		author: 'Михаил Сидоров',
-		title: 'Спортивный врач',
+			'FITNESS ALTITUDE helped me understand the science behind training. Now every exercise has meaning and purpose.',
+		author: 'Michael Stevens',
+		title: 'Sports Doctor',
 		image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
-		stat: '15 лет опыта'
+		stat: '15 years experience'
 	}
 ]
 
@@ -48,9 +48,9 @@ export function TestimonialsSection() {
 						{/* Main title with split effect */}
 						<div className='relative overflow-hidden'>
 							<h2 className='text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 leading-none'>
-								<span className='block transform hover:translate-x-3 transition-transform duration-500'>ОТЗЫВЫ</span>
+								<span className='block transform hover:translate-x-3 transition-transform duration-500'>REVIEWS</span>
 								<span className='block text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-pink-600 transform hover:-translate-x-3 transition-transform duration-500 -mt-3'>
-									ВЫСОТ
+									HEIGHTS
 								</span>
 							</h2>
 							
@@ -66,14 +66,14 @@ export function TestimonialsSection() {
 					{/* Subtitle with highlight */}
 					<div className='mt-10 space-y-4'>
 						<p className='text-xl lg:text-2xl text-gray-700 font-medium leading-relaxed max-w-4xl mx-auto'>
-							Истории успеха от тех, кто уже покорил 
+							Success stories from those who have already conquered 
 							<span className='bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-3 py-1 rounded-lg font-bold mx-2 transform inline-block hover:scale-105 transition-transform duration-300'>
-								новые высоты
+								new heights
 							</span>
-							вместе с нами
+							with us
 						</p>
 						<p className='text-lg text-gray-600 max-w-3xl mx-auto'>
-							Реальные отзывы от профессионалов фитнес-индустрии и наших преданных читателей
+							Real testimonials from fitness industry professionals and our dedicated readers
 						</p>
 					</div>
 
@@ -203,19 +203,19 @@ export function TestimonialsSection() {
 						<div className='relative grid grid-cols-2 md:grid-cols-4 gap-8 text-center'>
 							<div className='space-y-2'>
 								<div className='text-3xl lg:text-4xl font-black text-violet-400'>2K+</div>
-								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Довольных читателей</div>
+								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Satisfied Readers</div>
 							</div>
 							<div className='space-y-2'>
 								<div className='text-3xl lg:text-4xl font-black text-emerald-400'>98%</div>
-								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Положительных отзывов</div>
+								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Positive Reviews</div>
 							</div>
 							<div className='space-y-2'>
 								<div className='text-3xl lg:text-4xl font-black text-pink-400'>500+</div>
-								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Успешных историй</div>
+								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Successful Stories</div>
 							</div>
 							<div className='space-y-2'>
 								<div className='text-3xl lg:text-4xl font-black text-yellow-400'>24/7</div>
-								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Поддержка</div>
+								<div className='text-gray-300 text-sm font-medium uppercase tracking-wide'>Support</div>
 							</div>
 						</div>
 					</div>

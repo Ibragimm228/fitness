@@ -25,9 +25,9 @@ export function BlogPage() {
 						<div className='text-center space-y-8'>
 							<div className='relative inline-block'>
 								<h1 className='text-4xl lg:text-6xl font-black text-gray-900 leading-tight'>
-									<span className='block'>ЗАГРУЖАЕМ</span>
+									<span className='block'>LOADING</span>
 									<span className='block text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-pink-600 -mt-2'>
-										КОНТЕНТ
+										CONTENT
 									</span>
 								</h1>
 								<div className='absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-violet-500 to-transparent transform -translate-y-1/2 opacity-50'></div>
@@ -80,18 +80,18 @@ export function BlogPage() {
 						<div className='text-center space-y-8'>
 							<div className='relative inline-block'>
 								<h1 className='text-4xl lg:text-6xl font-black text-gray-900 leading-tight'>
-									<span className='block'>ОШИБКА</span>
+									<span className='block'>ERROR</span>
 									<span className='block text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600 -mt-2'>
-										ЗАГРУЗКИ
+										LOADING
 									</span>
 								</h1>
 								<div className='absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent transform -translate-y-1/2 opacity-50'></div>
 							</div>
 							
 							<p className='text-xl text-gray-700 max-w-2xl mx-auto'>
-								Не удалось загрузить статьи. Пожалуйста, попробуйте позже или 
+								Failed to load articles. Please try again later or 
 								<span className='bg-yellow-200 px-2 py-1 rounded-lg font-bold text-gray-900 mx-1'>
-									обновите страницу
+									refresh the page
 								</span>
 							</p>
 
@@ -100,7 +100,7 @@ export function BlogPage() {
 									onClick={() => window.location.reload()}
 									className='group inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-600 to-orange-700 text-white font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300'
 									style={{clipPath: 'polygon(0 0, 90% 0, 100% 30%, 90% 100%, 0 100%)'}}>
-									<span>Обновить страницу</span>
+									<span>Refresh Page</span>
 									<div className='ml-4 w-6 h-6 bg-white/20 flex items-center justify-center transform group-hover:rotate-180 transition-transform duration-300'>
 										<svg className='w-4 h-4' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
 											<path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15' />
@@ -144,7 +144,7 @@ export function BlogPage() {
 								<h1 className='text-5xl sm:text-6xl lg:text-7xl font-black text-gray-900 leading-none'>
 									<span className='block transform hover:translate-x-3 transition-transform duration-500'>FITNESS</span>
 									<span className='block text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-pink-600 transform hover:-translate-x-3 transition-transform duration-500 -mt-3'>
-										БЛОГ
+										BLOG
 									</span>
 								</h1>
 								
@@ -160,11 +160,11 @@ export function BlogPage() {
 						{/* Subtitle */}
 						<div className='mt-8 space-y-4'>
 							<p className='text-xl lg:text-2xl text-gray-700 font-medium leading-relaxed max-w-4xl mx-auto'>
-								Экспертный контент для покорения 
+								Expert content for conquering 
 								<span className='bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 px-3 py-1 rounded-lg font-bold mx-2 transform inline-block hover:scale-105 transition-transform duration-300'>
-									новых высот
+									new heights
 								</span>
-								в фитнесе
+								in fitness
 							</p>
 						</div>
 					</div>
@@ -183,7 +183,7 @@ export function BlogPage() {
 										<div className='flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left'>
 											<div className='flex items-center space-x-3'>
 												<div className='w-4 h-4 bg-violet-500 transform rotate-45'></div>
-												<span className='text-lg font-bold text-gray-700'>Фильтр по категории:</span>
+												<span className='text-lg font-bold text-gray-700'>Filter by category:</span>
 											</div>
 											
 											<div className='flex items-center gap-3 flex-wrap justify-center sm:justify-start'>
@@ -294,16 +294,16 @@ export function BlogPage() {
 										</div>
 
 										<h3 className='text-3xl lg:text-4xl font-bold text-gray-900'>
-											<span className='block'>Статьи не найдены</span>
+											<span className='block'>Articles not found</span>
 											{type && (
 												<span className='block text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-pink-600 text-xl mt-2'>
-													для категории "{type}"
+													for category "{type}"
 												</span>
 											)}
 										</h3>
 										
 										<p className='text-lg text-gray-600 max-w-md mx-auto'>
-											Попробуйте изменить фильтр или вернитесь к просмотру всех статей
+											Please try changing the filter or returning to viewing all articles
 										</p>
 
 										{type && (
@@ -312,7 +312,7 @@ export function BlogPage() {
 													to='/blog'
 													className='group inline-flex items-center px-6 py-3 bg-gradient-to-r from-violet-600 to-purple-700 text-white font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300'
 													style={{clipPath: 'polygon(0 0, 85% 0, 100% 30%, 85% 100%, 0 100%)'}}>
-													<span>Показать все статьи</span>
+													<span>Show all articles</span>
 													<div className='ml-3 w-5 h-5 bg-white/20 flex items-center justify-center transform group-hover:translate-x-1 transition-transform duration-300'>
 														<svg className='w-3 h-3' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
 															<path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M13 7l5 5m0 0l-5 5m5-5H6' />
